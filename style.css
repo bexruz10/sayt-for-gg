@@ -2,61 +2,60 @@
     font-family: 'Montserrat';
     src: url('fonts/Montserrat-Regular.ttf') format('truetype');
     font-weight: 400;
-}
+  }
 
-@font-face {
+  @font-face {
     font-family: 'Montserrat';
     src: url('fonts/Montserrat-Bold.ttf') format('truetype');
     font-weight: 700;
-}
+  }
 
-* {
+  * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
-}
+  }
 
-body,
-html {
+  body, html {
     height: 100%;
     background-color: #0b0f1a;
     color: #e0f7ff;
-}
+  }
 
-header {
+  header {
     background: url('9C4A5502.JPG') no-repeat center center/cover;
     position: relative;
     height: 100vh;
-}
+  }
 
-.overlay {
+  .overlay {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
     background: rgba(11, 15, 26, 0.7);
-}
+  }
 
-nav {
+  nav {
     position: absolute;
     top: 20px;
     left: 50%;
     transform: translateX(-50%);
     z-index: 2;
-}
+  }
 
-.logo-img {
+  .logo-img {
     height: 150px;
     width: 150px;
     border-radius: 50%;
     object-fit: cover;
     box-shadow: 0 0 15px #00cfff;
     border: 3px solid #00cfff;
-}
+  }
 
-.hero {
+  .hero {
     position: relative;
     z-index: 2;
     height: 100%;
@@ -66,31 +65,49 @@ nav {
     justify-content: center;
     text-align: center;
     padding: 0 20px;
-}
+  }
 
-.hero h1 {
+  .hero h1 {
     font-size: 3.5rem;
     color: #00cfff;
     text-shadow: 0 0 20px #00cfff;
     margin-top: 20px;
-}
+  }
 
-.info-box {
+  .info-box {
     margin-top: 20px;
     font-size: 1.2rem;
     color: #e0f7ff;
     max-width: 600px;
-}
+  }
 
-.social-buttons {
+  .work-highlight {
+    margin-top: 20px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    color: #e0f7ff;
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    background-color: rgba(255, 255, 255, 0.1);
+    gap: 10px;
+  }
+
+  .work-highlight img {
+    width: 20px;
+    height: 20px;
+  }
+
+  .social-buttons {
     margin-top: 40px;
     display: flex;
     gap: 20px;
     flex-wrap: wrap;
     justify-content: center;
-}
+  }
 
-.social-buttons a {
+  .social-buttons a {
     padding: 12px 25px;
     background-color: transparent;
     border: 2px solid #00cfff;
@@ -98,28 +115,27 @@ nav {
     color: #00cfff;
     text-decoration: none;
     transition: 0.3s;
-}
+  }
 
-.social-buttons a:hover {
+  .social-buttons a:hover {
     background-color: #00cfff;
     color: #0b0f1a;
     box-shadow: 0 0 20px #00cfff;
-}
+  }
 
-footer {
+  footer {
     text-align: center;
     padding: 20px;
     background-color: #0a0d17;
     color: #888;
-}
+  }
 
-@media (max-width: 768px) {
+  @media (max-width: 768px) {
     .hero h1 {
-        font-size: 2.5rem;
+      font-size: 2.5rem;
     }
-
     .logo-img {
-        height: 120px;
-        width: 120px;
+      height: 120px;
+      width: 120px;
     }
-}
+  }
